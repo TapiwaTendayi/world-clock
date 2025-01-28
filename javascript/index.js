@@ -1,23 +1,23 @@
 function updateTime() {
-  //losAngels
-  let losAngelsElement = document.querySelector("#los-angeles");
-  if (losAngelsElement) {
-    let losAngelsDateElement = losAngelsElement.querySelector(".date");
-    let losAngelsTimeElement = losAngelsElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
-    losAngelsDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
-    losAngelsTimeElement.innerHTML = `${losAngelesTime.format(
+  //harare
+  let harareElement = document.querySelector("#harare");
+  if (harareElement) {
+    let harareDateElement = harareElement.querySelector(".date");
+    let harareTimeElement = harareElement.querySelector(".time");
+    let harareTime = moment().tz("Africa/Harare");
+    harareDateElement.innerHTML = harareTime.format("MMMM Do YYYY");
+    harareTimeElement.innerHTML = `${harareTime.format(
       "h:mm:ss [<small>]A[</small>]"
     )}`;
   }
-  //Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
-    parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
-    parisTimeElement.innerHTML = `${parisTime.format(
+  //Seoul
+  let seoulElement = document.querySelector("#seoul");
+  if (seoulElement) {
+    let seoulDateElement = seoulElement.querySelector(".date");
+    let seoulTimeElement = seoulElement.querySelector(".time");
+    let seoulTime = moment().tz("Asia/Seoul");
+    seoulDateElement.innerHTML = seoulTime.format("MMMM Do YYYY");
+    seoulTimeElement.innerHTML = `${seoulTime.format(
       "h:mm:ss [<small>]A[</small>]"
     )}`;
   }
